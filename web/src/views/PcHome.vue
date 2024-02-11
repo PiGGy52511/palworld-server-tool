@@ -291,6 +291,36 @@ const createPlayerPalsColumns = () => {
       },
     },
     {
+      title: t("pal.ranged"),
+      key: "ranged",
+      width: 70,
+      defaultSortOrder: "descend",
+      sorter: "default",
+      render(j) {
+          return j.ranged
+      }
+    }, 
+    {
+      title: t("pal.defense"),
+      key: "defense",
+      width: 70,
+      defaultSortOrder: "descend",
+      sorter: "default",
+      render(j) {
+          return j.defense
+      }
+    }, 
+    {
+      title: t("pal.melee"),
+      key: "melee",
+      width: 70,
+      defaultSortOrder: "descend",
+      sorter: "default",
+      render(j) {
+          return j.melee
+      }
+    },
+    {
       title: t("pal.skills"),
       key: "skills",
       render(row) {
